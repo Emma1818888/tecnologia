@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #3b3b3b;
+}
+
+header {
+    background-color: #3b3b3b;
+    color: white;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #555555;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #333333;
+}
+
+.banner {
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("img/historia.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-primera {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("img/primera.jpg");
+}
+
+.banner-españa {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("img/civilldos.jpg");
+}
+
+.banner-segunda {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("img/segunda.jpg");
+}
+
+.banner-texto {
+    color: white;
+    max-width: 900px;
+    padding: 30px;
+}
+
+.banner-texto h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.banner-texto p {
+    font-size: 21px;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.introduccion {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.introduccion h2 {
+    color: #8f2727;
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contenedor-cajas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.caja {
+    background-color: white;
+    width: 32%;
+    min-height: 260px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.caja:hover {
+    transform: translateY(-8px);
+}
+
+.caja h2 {
+    color: #8f2727;
+    margin-bottom: 20px;
+}
+
+.caja p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contenido {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.contenido h2 {
+    color: #8f2727;
+    margin: 25px 0 15px;
+}
+
+.contenido h2:first-child {
+    margin-top: 0;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.contenido img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0 25px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #8f2727;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #8f2727;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #3b3b3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .banner {
+        height: 320px;
+    }
+
+    .banner-texto h1 {
+        font-size: 32px;
+    }
+
+    .contenedor-cajas {
+        flex-direction: column;
+    }
+
+    .caja {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 25px;
+    }
+}
